@@ -7,7 +7,7 @@
         <p><%= post["description"] %></p>
     <% end %>
 </ul>
-
-<a href="/posts/new"><button>New Post</button></a>
+<!--Added query string for place_id-->
+<a href="/posts/new?place_id=<%= @place.id %>"><button>New Post</button></a>
 
 <p><a href="/places">Back to Places</a></p>

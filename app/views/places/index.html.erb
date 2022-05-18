@@ -1,8 +1,8 @@
 <h1>Places I've Been</h1>
 
-<ul>
+<ul style="list-style-type:none;">
     <% for place in @places %>
-            <a href="/places/<%= place["id"]%>"><%= place["name"] %></a>
+            <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
     
     <% end %>
 </ul>
